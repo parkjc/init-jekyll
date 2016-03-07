@@ -1,3 +1,5 @@
+echo -e "\n\n---------- Installing Xcode -----------\n"
+sudo xcode-select -install
 # Install Jekyll
 echo -e "\n\n---------- Installing Jekyll ----------\n"
 sudo gem install jekyll
