@@ -1,4 +1,4 @@
-echo -e "\n\n---------- Installing Ruby through Homebrew ----------"
+echo -e "\n\n---------- Installing Ruby via Homebrew ----------\n"
 # Install Homebrew
 # /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -9,6 +9,11 @@ echo -e "\n\n---------- Installing Ruby through Homebrew ----------"
 
 # Install Nodejs via Homebrew
 # sudo brew install node
+
+# Install Jekyll
+echo -e "\n\n---------- Installing Jekyll ----------\n"
+sudo gem install jekyll
+sudo gem install jekyll-paginate
 
 # Clone repo from GitHub and run web server
 echo -e "\n\n---------- Cloning Repo From GitHub ----------\n"
