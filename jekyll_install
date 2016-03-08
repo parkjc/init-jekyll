@@ -1,15 +1,25 @@
+#!/bin/bash
+
+# Install Pre-requisites
 echo -e "\n\n---------- Installing Xcode -----------\n"
 sudo xcode-select -install
+
 # Install Jekyll
 echo -e "\n\n---------- Installing Jekyll ----------\n"
 sudo gem install jekyll
 sudo gem install jekyll-paginate
 
-# Clone repo from GitHub and run web server
+# Clone repo from GitHub into a 'jekyll' directory
 echo -e "\n\n---------- Cloning Repo From GitHub ----------\n"
+cd ~/Desktop
+mkdir jekyll
+cd jekyll
 git clone https://github.com/uhm-coe/assist.git
 cd assist
 echo -e "\n\n---------- Pulling Latest Changes From Repo ----------\n"
 git pull origin master
-echo -e "\n\n---------- Running Jekyll Server --------\n"
-sudo jekyll serve -o
+
+# Open Readme and close Terminal
+echo -e "\n\n---------- Opening Readme File ----------\n"
+open -t README.md
+osascript -e 'tell application "Terminal" to quit' & exit

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo -e "\n\n---------- Running Jekyll Server --------\n"
+
+sudo jekyll serve
